@@ -19,12 +19,18 @@
                     <li class="header__list_item"><a href="#!">Business</a></li>
                 </ul>
 
-                <ul class="header__list">
-                    <li class="header__list_item"><a href="#!">Zenefits</a></li>
-                    <li class="header__list_item"><a href="#!">Features</a></li>
-                    <li class="header__list_item"><a href="#!">Pricing</a></li>
-                    <li class="header__list_item btn--mod"><a href="#!">Get app</a></li>
+                <ul class="header__list header__menu">
+                    <li class="header__list_item"><a href="#one">Zenefits</a></li>
+                    <li class="header__list_item"><a href="#two">Features</a></li>
+                    <li class="header__list_item"><a href="#three">Pricing</a></li>
+                    <li class="header__list_item btn--mod"><a href="#four">Get app</a></li>
                 </ul>
+
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -48,7 +54,7 @@
                 </div>
             </div>
             <!-- BLOCK 2 -->
-            <section class="boost">
+            <section class="boost" id="point">
                 <div class="boost__mobile">
                     <img src="./img/mobile2.png" alt="mobile2">
                 </div>
@@ -77,7 +83,7 @@
                 </div>
             </section>
             <!-- BLOCK 4 -->
-            <secion class="cashback">
+            <secion class="cashback" id="one">
                 <h2>and cashback</h2>
                 <p>It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it. We gave it a thought and made cashback way more friendly. Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase. It's like you haggled some cash, despite you didn't have to. Just don't forget to use in-app cashback link.</p>
                 <a class="btn--mod" href="#!">Show more partners</a>
@@ -94,7 +100,7 @@
                 <img src="./img/groupon.svg" alt="groupon">
             </section>
             <!-- BLOCK 6 -->
-            <section class="mastercard">
+            <section class="mastercard" id="two">
                 <div class="mastercard__content">
                     <h2>ZEN shopping Mastercard</h2>
                     <p>You shouldn’t be bound to use one card at a time, especially when it has so many benefits! With ZEN, you can manage your shopping and finances with both physical and virtual cards. It’s convenient, streamlined, and works like a charm. You can have a shopping card, a subscription card, and whatever other cards that make sense to you.</p>
@@ -119,7 +125,7 @@
                 </div>
             </section>
             <!-- BLOCK 8 -->
-            <section class="app">
+            <section class="app" id="three">
                 <div class="app__content">
                     <h2>One app, one account, many currencies</h2>
                     <p>ZEN Mastercard® was made for spending money. ZEN account is here to store and manage it peacefully, from the inside of your pocket.</p>
@@ -145,7 +151,7 @@
                 </div>
             </section>
             <!-- FOOTER -->
-            <footer class="footer">
+            <footer class="footer" id="four">
                 <div class="footer__first">
                     <div class="footer__block">
                         <h4>Learn</h4>
@@ -205,6 +211,9 @@
             </footer>
         </div>
     </main>
+
+    <script src="js/waypoints.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
