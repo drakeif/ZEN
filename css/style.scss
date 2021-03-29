@@ -110,13 +110,13 @@ h4 {
             background: $accent;
         }
     }
-    &--burger {
+    &__menu {
         @include point(800) {
             display: none;
         }
     }
-    &__menu {
-        @include point(800) {
+    &__linktohide {
+        @include point(400) {
             display: none;
         }
     }
@@ -137,7 +137,6 @@ h4 {
         }
     }
 }
-
 .btn--mod {
     border: 1px solid $dark;
     border-radius: 50px;
@@ -151,7 +150,7 @@ h4 {
     position: fixed;
     padding: 5px 0;
     box-shadow: 0 3px 3px rgba($dark, .3);
-    animation: header-fixed .3s linear;
+    animation: header-fixed .2s linear;
 }
 @keyframes header-fixed {
     from {
@@ -173,14 +172,19 @@ h4 {
     align-items: center;
     row-gap: 20px;
     box-shadow: 0 3px 3px rgba($dark, .3);
-    animation: menu-fixed .3s linear;
+    transform-origin: top;
+    animation: menu-fixed .2s linear;
 }
 @keyframes menu-fixed {
     from {
-        transform: translateX(-100%)
+        /* transform: translateY(-100%) */
+       transform: scaleY(0);
+    
     }
     to {
-        transform: translateX(0)
+       /*  transform: translateY(0) */
+        transform: scaleY(1);
+      
     }
 }
 // BLOCK 1

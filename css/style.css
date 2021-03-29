@@ -107,10 +107,10 @@ h4 {
     .header__burger:hover span {
       background: #f79e1b; }
   @media only screen and (max-width: 800px) {
-    .header--burger {
-      display: none; } }
-  @media only screen and (max-width: 800px) {
     .header__menu {
+      display: none; } }
+  @media only screen and (max-width: 400px) {
+    .header__linktohide {
       display: none; } }
 
 .header__burger.active span:nth-child(1) {
@@ -139,8 +139,8 @@ h4 {
   padding: 5px 0;
   -webkit-box-shadow: 0 3px 3px rgba(34, 34, 34, 0.3);
           box-shadow: 0 3px 3px rgba(34, 34, 34, 0.3);
-  -webkit-animation: header-fixed .3s linear;
-          animation: header-fixed .3s linear; }
+  -webkit-animation: header-fixed .2s linear;
+          animation: header-fixed .2s linear; }
 
 @-webkit-keyframes header-fixed {
   from {
@@ -177,24 +177,30 @@ h4 {
   row-gap: 20px;
   -webkit-box-shadow: 0 3px 3px rgba(34, 34, 34, 0.3);
           box-shadow: 0 3px 3px rgba(34, 34, 34, 0.3);
-  -webkit-animation: menu-fixed .3s linear;
-          animation: menu-fixed .3s linear; }
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: menu-fixed .2s linear;
+          animation: menu-fixed .2s linear; }
 
 @-webkit-keyframes menu-fixed {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); }
+    /* transform: translateY(-100%) */
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0); }
   to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+    /*  transform: translateY(0) */
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); } }
 
 @keyframes menu-fixed {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); }
+    /* transform: translateY(-100%) */
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0); }
   to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+    /*  transform: translateY(0) */
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); } }
 .peacefull {
   padding: 100px 0 50px 0;
   display: -webkit-box;
