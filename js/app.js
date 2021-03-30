@@ -29,8 +29,8 @@ const closeMenu = () => {
 
 burger.addEventListener('click', openMenu);
 
-const toGo = document.querySelectorAll('.header__menu')
+const toGo = document.querySelectorAll('.header__menu');
 
 for(let i = 0; i < toGo.length; i++) {
-    toGo[i].addEventListener('click', closeMenu)
+    toGo[i].addEventListener('click', closeMenu);
 }
