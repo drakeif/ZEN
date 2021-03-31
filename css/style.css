@@ -121,8 +121,8 @@ h4 {
 
 .header__burger.active span:nth-child(1) {
   top: 0;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
   opacity: 0; }
 .header__burger.active span:nth-child(2) {
   top: 50%;
@@ -134,8 +134,8 @@ h4 {
           transform: rotate(-45deg); }
 .header__burger.active span:nth-child(4) {
   top: 100%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
   opacity: 0; }
 
 .btn--mod {
