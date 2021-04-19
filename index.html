@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEN</title>
+    <style>
+        .header__burger {
+            display: none;
+        }
+    </style>
     <link rel="icon" type="image/svg+xml" href="img/mastercard.svg">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,6 +23,12 @@
                     <li class="header__list_item header__linktohide"><a href="#!">Personal</a></li>
                     <li class="header__list_item header__linktohide"><a href="#!">Business</a></li>
                 </ul>
+
+                <select class="change-lang">
+                    <option value="ua">UA</option>
+                    <option value="ru">RU</option>
+                    <option value="en" selected>EN</option>
+                </select>
 
                 <ul class="header__list header__menu">
                     <li class="header__list_item"><a href="#one">Zenefits</a></li>
@@ -41,9 +52,9 @@
             <!-- BLOCK 1 -->
             <div class="peacefull">
                 <div class="peacefull__content">
-                   <h3>In every beginning, there is chaos.</h3>
-                   <h1>Peaceful shopping. Mindful money.</h1>
-                   <p>See how we can help with making your shopping experience and money management more ZEN.</p>
+                   <h3 class="lang-sup-title">In every beginning, there is chaos.</h3>
+                   <h1 class="lang-main-title">Peaceful shopping. Mindful money.</h1>
+                   <p class="lang-sub-title">See how we can help with making your shopping experience and money management more ZEN.</p>
                    <div class="peacefull__download">
                        <a href="#!"><img src="./img/appstore.png" alt="appstrore"></a>
                        <a href="#!"><img src="./img/googlepay.png" alt="googlepay"></a>  
@@ -84,13 +95,13 @@
                 </div>
             </section>
             <!-- BLOCK 4 -->
-            <secion class="cashback" id="one">
+            <section class="cashback" id="one">
                 <h2>and cashback</h2>
                 <p>It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it. We gave it a thought and made cashback way more friendly. Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase. It's like you haggled some cash, despite you didn't have to. Just don't forget to use in-app cashback link.</p>
                 <a class="btn--mod" href="#!">Show more partners</a>
-            </secion>
+            </section>
             <!-- BLOCK 5 -->
-            <section class="banners">
+            <div class="banners">
                 <img src="./img/booking.svg" alt="booking">
                 <img src="./img/aliexpress.svg" alt="aliexpress">
                 <img src="./img/allegro.svg" alt="allegro">
@@ -99,7 +110,7 @@
                 <img src="./img/media.svg" alt="media">
                 <img src="./img/rtv.svg" alt="rtv">
                 <img src="./img/groupon.svg" alt="groupon">
-            </section>
+            </div>
             <!-- BLOCK 6 -->
             <section class="mastercard" id="two">
                 <div class="mastercard__content">
@@ -215,7 +226,8 @@
     </main>
 
     <script src="js/waypoints.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/app.min.js"></script>
 
 </body>
 </html>
