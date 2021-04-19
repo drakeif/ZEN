@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+*::-webkit-scrollbar {
+  width: 7px; }
+
+*::-webkit-scrollbar-track {
+  background: #ffffff; }
+
+*::-webkit-scrollbar-thumb {
+  background: #f79e1b; }
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #dd0c17; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,6 +49,13 @@ h4 {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
+
+select {
+  padding: 0 10px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  outline: none; }
 
 .header {
   padding: 20px 0;
@@ -83,7 +102,7 @@ h4 {
       .header__list_item:hover a {
         color: #f79e1b; }
   .header__burger {
-    display: none;
+    /*  display: none; */
     position: relative;
     width: 40px;
     height: 20px;

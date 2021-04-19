@@ -4,7 +4,22 @@ $gray: #cccccc;
 $footer: #aaaaaa;
 $accent: #f79e1b;
 $wh: #ffffff;
+$red: #dd0c17;
 @import 'media';
+//SCROLLBAR
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: $wh; 
+}
+*::-webkit-scrollbar-thumb {
+    background: $accent;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: $red; 
+}
+// CORRECT STYLE
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -42,6 +57,14 @@ h4 {
 
     margin: 0 auto;
     padding: 0 15px;
+}
+// LANG
+select {
+    padding: 0 10px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    outline: none;
 }
 // HEADER
 .header {
@@ -82,7 +105,7 @@ h4 {
         }
     }
     &__burger {
-        display: none;
+       /*  display: none; */
         position: relative;
         width: 40px;
         height: 20px;
