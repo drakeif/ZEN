@@ -29,6 +29,9 @@ body {
   color: #222222;
   line-height: 1.5; }
 
+#body.active {
+  overflow: hidden; }
+
 img {
   display: inline-block;
   max-width: 100%;
@@ -100,6 +103,8 @@ select {
         -webkit-transition: .2s linear;
         transition: .2s linear; }
       .header__list_item:hover a {
+        color: #f79e1b; }
+      .header__list_item.active {
         color: #f79e1b; }
   .header__burger {
     /*  display: none; */

@@ -16,23 +16,41 @@ let waypoint = new Waypoint({
 const burger = document.querySelector('.header__burger');
 const nav = document.querySelector('.header__nav');
 
+const body = document.getElementById('body');
+
 const openMenu = () => {
     nav.classList.toggle('active');
     burger.classList.toggle('active');
+    body.classList.toggle('active');
 }
 
 const closeMenu = () => {
     nav.classList.remove('active');
     burger.classList.remove('active');
+    body.classList.remove('active');
 }
 
 burger.addEventListener('click', openMenu);
 
-const toGo = document.querySelectorAll('.header__menu');
+/* const toGo = document.querySelectorAll('.header__menu');
 
 for(let i = 0; i < toGo.length; i++) {
     toGo[i].addEventListener('click', closeMenu);
 }
+ */
+/* const toGoLink = document.querySelector('.header__menu');
+
+toGoLink.addEventListener('click', (e) => {
+    if(e.target.tagName === 'A') {
+        nav.classList.remove('active');
+        burger.classList.remove('active');
+    }
+}) */
+
+const toGoLink2 = document.querySelectorAll('.header__menu');
+
+toGoLink2.forEach(el => el.addEventListener('click', closeMenu));
+
 // CHANGE LANGUAGE
 const select = document.querySelector('select');
 const allLang = ['en', 'ru', 'ua'];
@@ -68,5 +86,21 @@ function changeLanguage() {
 
     }
 }
-
 changeLanguage();
+// JS NAV BTN
+const navBtn = document.querySelectorAll('.js-nav');
+
+navBtn.forEach(function(item) {
+    item.addEventListener('click', function() {
+        let currentBtn = item;
+
+        if(!currentBtn.classList.contains('active')) {
+        navBtn.forEach(function(item) {
+            item.classList.remove('active');
+        });
+            currentBtn.classList.add('active');
+        };
+    });
+});
+
+document.querySelector('.js-nav:nth-child(1)').click();

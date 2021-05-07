@@ -36,6 +36,11 @@ body {
     color: $dark;
     line-height: 1.5;
 }
+#body {
+    &.active {
+        overflow: hidden;
+    }
+}
 img {
     display: inline-block;
     max-width: 100%;
@@ -100,7 +105,10 @@ select {
                 transition: .2s linear;
             }
             &:hover a {
-                color: $accent;;
+                color: $accent;
+            }
+            &.active {
+                color: $accent;
             }
         }
     }

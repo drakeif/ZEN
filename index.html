@@ -13,7 +13,7 @@
     <link rel="icon" type="image/svg+xml" href="img/mastercard.svg">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -30,11 +30,11 @@
                     <option value="en" selected>EN</option>
                 </select>
 
-                <ul class="header__list header__menu">
-                    <li class="header__list_item"><a href="#one">Zenefits</a></li>
-                    <li class="header__list_item"><a href="#two">Features</a></li>
-                    <li class="header__list_item"><a href="#three">Pricing</a></li>
-                    <li class="header__list_item btn--mod"><a href="#four">Get app</a></li>
+                <ul class="header__list header__menu" id="closeMenu">
+                    <li class="header__list_item js-nav"><a href="#one">Zenefits</a></li>
+                    <li class="header__list_item js-nav"><a href="#two">Features</a></li>
+                    <li class="header__list_item js-nav"><a href="#three">Pricing</a></li>
+                    <li class="header__list_item btn--mod js-nav"><a href="#four">Get app</a></li>
                 </ul>
 
                 <button class="header__burger">
