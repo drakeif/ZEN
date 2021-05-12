@@ -278,7 +278,12 @@ select {
             align-items: flex-start;
     row-gap: 20px; }
     .peacefull__download a {
+      display: block;
       text-decoration: none; }
+      .peacefull__download a img {
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+        border-radius: 10px; }
       .peacefull__download a:hover img {
         -webkit-box-shadow: 0 7px 20px 3px rgba(34, 34, 34, 0.5);
                 box-shadow: 0 7px 20px 3px rgba(34, 34, 34, 0.5); }
@@ -402,6 +407,7 @@ select {
     .mastercard__pay a {
       text-decoration: none; }
       .mastercard__pay a img {
+        border-radius: 5px;
         -webkit-transition: .2s linear;
         transition: .2s linear; }
       .mastercard__pay a:hover img {
@@ -487,6 +493,7 @@ select {
     -webkit-column-gap: 20px;
             column-gap: 20px; }
     .account__download a img {
+      border-radius: 10px;
       -webkit-transition: .2s linear;
       transition: .2s linear; }
     .account__download a:hover img {
